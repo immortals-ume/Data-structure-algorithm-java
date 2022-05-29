@@ -21,6 +21,7 @@ public class BubbleSort{
 
     public static void bubbleSorted( int[] arr ){
         bubbleSort( arr );
+        System.out.print( "Bubble Sort : " );
         for ( int i: arr ) {
             System.out.print( i+" " );
         }
