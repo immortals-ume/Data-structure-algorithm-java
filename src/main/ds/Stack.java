@@ -12,7 +12,6 @@ public class Stack{
 
     private int top;
 
-    //Args Constructor
     public Stack( int size ){
         arr=new int[size];
         this.size=size;
