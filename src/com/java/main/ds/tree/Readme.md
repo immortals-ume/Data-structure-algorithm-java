@@ -2,10 +2,10 @@
 
 1. BST - Binary Search Tree | Time Complexity is directly proportional to Height Of tree
 
-   a. tree consist of key and satellite data , in addition to previous values it also consists of left, right , parent
+   Tree consist of key and satellite data , in addition to previous values it also consists of left, right , parent
    which points to respective left child and right child and its parent.
-   b. if child or parent is missing , the appropriate attributes contains the value as NULL.
-   c. the root node is only node whose parent is NIL
+   If child or parent is missing , the appropriate attributes contains the value as NULL.
+   The root node is only node whose parent is NIL
 
 Representation of BST : refer TreeNode.java
 
