@@ -8,7 +8,18 @@
    The root node is only node whose parent is NIL
 
 Representation of BST : refer TreeNode.java
+public class TreeNode{
+int data;
+TreeNode left;
+TreeNode right;
 
+       public TreeNode( int data ){
+           this.data=data;
+           left=null;
+           right=null;
+       }
+
+}
 BST-property
 
     let x be a node in BST , if y is a node in the left subtree of x then y.key <= x.key,
@@ -51,6 +62,8 @@ b. Finding a MIN and MAX of BST
     
     Maximum Value In BST  - find an element such a way in BST , whose key is maximum by following 
     all the right child pointers until it reaches NIL
+   
+    |Time Complexity : The time complexity is O(h)  where h is height of the tree
 
 c. finding a successor or predecessor in BST
 d. Insertion in BST
