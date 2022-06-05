@@ -28,18 +28,45 @@ public class DsMain{
         System.out.println( stack.pop( ) );
 
         System.out.println( "TREE DATA STRUCTURE" );
+
         Tree tree=new Tree( );
         TreeNode treeNode=null;
         tree.binarySearchTree( 5 );
         tree.binarySearchTree( 6 );
         treeNode=tree.binarySearchTree( 4 );
+
         System.out.print( "INORDER TRAVERSAL : " );
         tree.traverseInOrder( treeNode );
         System.out.print( "\n"+"POSTORDER TRAVERSAL : " );
         tree.traversePostOrder( treeNode );
         System.out.print( "\n"+"PREORDER TRAVERSAL : " );
         tree.traversePreOrder( treeNode );
-        System.out.print( "\n"+"BFS TRAVERSAL : " );
-        tree.printLevelOrder( treeNode );
+
+        System.out.print( "\n"+"BFS TRAVERSAL  : " );
+        tree.bfs( treeNode );
+
+        System.out.print( "\n"+"Searching an element in BST Recursively  : " );
+        System.out.println( tree.searchElementUsingRecursion( treeNode,3 ) );
+
+        System.out.print( "\n"+"Searching an element in BST Recursively : " );
+        System.out.println( tree.searchElementUsingRecursion( treeNode,4 ) );
+
+
+        System.out.print( "\n"+"Searching an element in BST Iteratively: " );
+        final TreeNode treeNode1=tree.searchElementUsingIterativeApproach( treeNode,3 );
+        if ( treeNode1!=null ) {
+            System.out.println( "true" );
+        } else {
+            System.out.println( "false" );
+        }
+
+        System.out.print( "\n"+"Searching an element in BST Iteratively: " );
+        treeNode=tree.searchElementUsingIterativeApproach( treeNode,4 );
+        if ( treeNode!=null ) {
+            System.out.println( "true" );
+        } else {
+            System.out.println( "false" );
+        }
+
     }
 }

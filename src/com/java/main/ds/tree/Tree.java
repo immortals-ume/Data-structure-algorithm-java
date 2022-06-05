@@ -8,7 +8,6 @@ public class Tree{
 
     private TreeNode root;
 
-
     private TreeNode createTree( TreeNode current,int data ){
 
         if ( current==null ) {
@@ -38,7 +37,7 @@ public class Tree{
     }
 
     private void visit( TreeNode node ){
-        System.out.print( ","+node.data );
+        System.out.print( " "+node.data );
     }
 
     public void traversePreOrder( TreeNode node ){
@@ -59,7 +58,10 @@ public class Tree{
         }
     }
 
-    public void printLevelOrder( TreeNode root ){
+    /**
+     * BFS Implementation On a Tree
+     */
+    public void bfs( TreeNode root ){
         Queue< TreeNode > queue=new LinkedList<>( );
         queue.add( root );
         while ( !queue.isEmpty( ) ) {
@@ -74,5 +76,34 @@ public class Tree{
         }
     }
 
+    /**
+     * Searching a element in BST , recursive approach
+     */
+    public boolean searchElementUsingRecursion( TreeNode node,int key ){
+        boolean response;
+        if ( node==null )
+            return false;
 
+        if ( key==node.data ) {
+            return true;
+        }
+        if ( key<node.data ) {
+            response=searchElementUsingRecursion( node.left,key );
+        } else {
+            response=searchElementUsingRecursion( node.right,key );
+        }
+        return response;
+    }
+
+
+    public TreeNode searchElementUsingIterativeApproach( TreeNode node,int key ){
+        while ( node!=null&&key!=node.data ) {
+            if ( key<node.data ) {
+                node=node.left;
+            } else {
+                node=node.right;
+            }
+        }
+        return node;
+    }
 }
