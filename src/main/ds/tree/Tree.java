@@ -10,24 +10,22 @@ public class Tree{
         if ( current==null ) {
             return new TreeNode( data );
         }
-
         if ( data<=current.data ) {
             current.left=createTree( current.left,data );
-        } else
-            if ( data>=current.data ) {
-                current.right=createTree( current.right,data );
-            } else {
-                return current;
-            }
-
+        }
+        if ( data>=current.data ) {
+            current.right=createTree( current.right,data );
+        }
         return current;
     }
 
-    public void binarySearchTree( int data ){
+    public TreeNode binarySearchTree( int data ){
         root=createTree( root,data );
+        return root;
     }
 
     public void traverseInOrder( TreeNode node ){
+
         if ( node!=null ) {
             traverseInOrder( node.left );
             visit( node );
@@ -40,6 +38,7 @@ public class Tree{
     }
 
     public void traversePreOrder( TreeNode node ){
+
         if ( node!=null ) {
             visit( node );
             traversePreOrder( node.left );
@@ -48,6 +47,7 @@ public class Tree{
     }
 
     public void traversePostOrder( TreeNode node ){
+
         if ( node!=null ) {
             traversePostOrder( node.left );
             traversePostOrder( node.right );

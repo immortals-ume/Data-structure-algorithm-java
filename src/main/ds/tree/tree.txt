@@ -15,6 +15,13 @@ Data Structure : Tree
   b. Preorder Tree Walk : parent node -> left subtree -> right subtree
   c. Postorder Tree Walk : left subtree -> right subtree -> parent node
 
+
   Querying a BST
 
-  a. Searching a BST
+  a. Searching an element in BST
+  b. DEPTH FIRST SEARCH
+  c. BREADTH FIRST SEARCH
+  d. Finding a MIN and MAX of BST
+  e. finding a successor or predecessor in BST
+  f. Insertion in BST
+  g. deletion in BST

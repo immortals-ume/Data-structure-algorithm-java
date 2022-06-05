@@ -2,6 +2,7 @@ package main.ds;
 
 import main.ds.stack.Stack;
 import main.ds.tree.Tree;
+import main.ds.tree.TreeNode;
 
 import static main.utils.RandomUtils.randomInt;
 
@@ -28,11 +29,15 @@ public class DsMain{
 
         System.out.println( "TREE DATA STRUCTURE" );
         Tree tree=new Tree( );
+        TreeNode treeNode=null;
         tree.binarySearchTree( 5 );
         tree.binarySearchTree( 6 );
-        tree.binarySearchTree( 4 );
-        tree.binarySearchTree( 52 );
-        tree.binarySearchTree( 54 );
-
+        treeNode=tree.binarySearchTree( 4 );
+        System.out.print( "INORDER TRAVERSAL : " );
+        tree.traverseInOrder( treeNode );
+        System.out.print( "\n"+"POSTORDER TRAVERSAL : " );
+        tree.traversePostOrder( treeNode );
+        System.out.print( "\n"+"PREORDER TRAVERSAL : " );
+        tree.traversePreOrder( treeNode );
     }
 }
