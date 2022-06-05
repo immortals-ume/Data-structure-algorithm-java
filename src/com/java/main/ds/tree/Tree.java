@@ -1,9 +1,13 @@
 package com.java.main.ds.tree;
 
+import java.util.LinkedList;
+import java.util.Queue;
+
 public class Tree{
 
 
     private TreeNode root;
+
 
     private TreeNode createTree( TreeNode current,int data ){
 
@@ -54,4 +58,21 @@ public class Tree{
             visit( node );
         }
     }
+
+    public void printLevelOrder( TreeNode root ){
+        Queue< TreeNode > queue=new LinkedList<>( );
+        queue.add( root );
+        while ( !queue.isEmpty( ) ) {
+            TreeNode tempNode=queue.poll( );
+            System.out.print( tempNode.data+" " );
+            if ( tempNode.left!=null ) {
+                queue.add( tempNode.left );
+            }
+            if ( tempNode.right!=null ) {
+                queue.add( tempNode.right );
+            }
+        }
+    }
+
+
 }

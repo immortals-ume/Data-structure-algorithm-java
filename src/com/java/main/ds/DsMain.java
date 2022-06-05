@@ -39,5 +39,7 @@ public class DsMain{
         tree.traversePostOrder( treeNode );
         System.out.print( "\n"+"PREORDER TRAVERSAL : " );
         tree.traversePreOrder( treeNode );
+        System.out.print( "\n"+"BFS TRAVERSAL : " );
+        tree.printLevelOrder( treeNode );
     }
 }
