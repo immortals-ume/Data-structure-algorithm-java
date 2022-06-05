@@ -33,9 +33,6 @@ public class AlgorithmMain{
 
         System.out.println( " " );
 
-        //MaxSubarrayProblem.maxSubarrayProblemDivideAndConquer( new int[]{ 64,23,143,94},0,new int[]{ 64,23,143,94}
-        // .length-1 ); // Stack Overflow Error Needs to be Checked
-
         MaxSubarrayProblem.maxSubarrayProblemKadaneAlgorithm( new int[]{ 64,23,143,94,-93,203,-436 } );
 
         System.out.println( " " );
