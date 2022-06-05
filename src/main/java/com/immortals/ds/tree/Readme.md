@@ -6,7 +6,7 @@
    which points to respective left child and right child and its parent. If child or parent is missing , the appropriate
    attributes contains the value as NULL. The root node is only node whose parent is NIL
 
-Representation of BST :[representation of Tree](src/main/java/com/immortals/ds/tree/TreeNode.java)
+Representation of BST :[representation of Tree](TreeNode.java)
 
 BST-property
 
