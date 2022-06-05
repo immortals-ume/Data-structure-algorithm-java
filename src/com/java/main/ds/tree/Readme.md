@@ -8,18 +8,7 @@
    The root node is only node whose parent is NIL
 
 Representation of BST : refer TreeNode.java
-public class TreeNode{
-int data;
-TreeNode left;
-TreeNode right;
 
-       public TreeNode( int data ){
-           this.data=data;
-           left=null;
-           right=null;
-       }
-
-}
 BST-property
 
     let x be a node in BST , if y is a node in the left subtree of x then y.key <= x.key,
