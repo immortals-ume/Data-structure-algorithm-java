@@ -64,4 +64,4 @@ e. deletion in BST
 f. create a tree from given traversal array . Inorder , postorder, preorder Traversal
 g. calculating height of a BST
 
-refer [Binary Search Tree Implementation](Tree.java)
+refer [Implementation Of BST ](Tree.java)
