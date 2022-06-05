@@ -6,11 +6,11 @@ package main.java.com.immortals.ds.tree;
 public class TreeNode{
 
 
-    int data;
+    public final int data;
 
-    TreeNode left;
+    public TreeNode left;
 
-    TreeNode right;
+    public TreeNode right;
 
     public TreeNode( int data ){
         this.data=data;

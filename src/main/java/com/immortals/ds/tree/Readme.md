@@ -61,3 +61,5 @@ d. Insertion in BST
 e. deletion in BST
 f. create a tree from given traversal array . Inorder , postorder, preorder Traversal
 g. calculating height of a BST
+
+refer [Implementation Of BST ](Tree.java)
