@@ -15,18 +15,18 @@ BST-property
 
 Traversing a BST using DEPTH FIRST SEARCH
 
-Depth First Search (DFS) algorithm traverses a graph in a depth ward motion and uses a stack to remember
-to get the next vertex to start a search, when a dead end occurs in any iteration.
-
-There are three ways in which we can perform Depth first Search on a BST.
+    Depth First Search (DFS) algorithm traverses a graph in a depth ward motion and uses a stack to remember
+    to get the next vertex to start a search, when a dead end occurs in any iteration.
+    
+    There are three ways in which we can perform Depth first Search on a BST.
 
       a. Inorder Tree Walk : left subtree  -> parent node -> Right Subtree
       b. Preorder Tree Walk : parent node -> left subtree -> right subtree
       c. Postorder Tree Walk : left subtree -> right subtree -> parent node
 
-|Space complexity: O(n)
-|Time Complexity : The time complexity is O(n) because the recursive function is
-T(n) = 2T(n/2)+1T(n)=2T(n/2)+1.
+    |Space complexity: O(n)
+    |Time Complexity : The time complexity is O(n) because the recursive function is
+    T(n) = 2T(n/2)+1T(n)=2T(n/2)+1.
 
 Traversing a BST using BREADTH FIRST SEARCH
 
