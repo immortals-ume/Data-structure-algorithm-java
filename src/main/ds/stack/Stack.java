@@ -1,4 +1,4 @@
-package main.ds;
+package main.ds.stack;
 
 /**
  * Implements Stack Data Structure

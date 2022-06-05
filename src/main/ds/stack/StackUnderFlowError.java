@@ -1,4 +1,4 @@
-package main.ds;
+package main.ds.stack;
 
 public class StackUnderFlowError extends RuntimeException{
 

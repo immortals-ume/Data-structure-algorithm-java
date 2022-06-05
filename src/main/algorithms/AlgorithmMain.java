@@ -1,4 +1,4 @@
-package main;
+package main.algorithms;
 
 import main.algorithms.problems.MaxSubarrayProblem;
 import main.algorithms.problems.StrassenMatrixMultiplication;
@@ -10,7 +10,7 @@ import main.algorithms.sorting.MergeSort;
 
 
 
-public class JavaIsFun{
+public class AlgorithmMain{
 
 
     public static void main( String[] args ){
@@ -50,6 +50,6 @@ public class JavaIsFun{
 
         System.out.println( " " );
 
-        MergeSort.mergeSorted(  new int[]{ 64,23,143,94,-93,203,-436 }  );
+        MergeSort.mergeSorted( new int[]{ 64,23,143,94,-93,203,-436 } );
     }
 }

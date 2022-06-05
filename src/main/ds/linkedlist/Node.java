@@ -1,4 +1,4 @@
-package main.ds;
+package main.ds.linkedlist;
 
 
 public class Node{

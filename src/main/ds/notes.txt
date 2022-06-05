@@ -1,9 +1,0 @@
-1.Linked Lists
-  - Singly Linked Lists 1->2->3->4
-  - Doubly Linked Lists 1+p1->2+p2->3+p3->4+p4
-  - Circular Singly Linked Lists 1->2->1
-  - Circular Doubly Linked Lists 1+p1->2+p2->3+p3->4+p4->1+p1
-
-
-2. Stack LIFO
-3. QUEUE FIFO , priority QUEUE

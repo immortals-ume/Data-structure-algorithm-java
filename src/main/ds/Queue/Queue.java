@@ -1,4 +1,4 @@
-package main.ds;
+package main.ds.Queue;
 
 public class Queue{
 

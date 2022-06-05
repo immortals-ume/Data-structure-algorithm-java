@@ -1,2 +1,3 @@
-# java-is-fun
-implementing data structures and algorithm using java 
+# Data Structure And Algorithms Using Java
+
+The project covers all the topics of Data Structure and Algorithms in Computer Science.

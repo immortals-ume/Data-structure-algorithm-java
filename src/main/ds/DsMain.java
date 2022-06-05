@@ -1,6 +1,6 @@
 package main.ds;
 
-import main.ds.tree.Tree;
+import main.ds.stack.Stack;
 
 import static main.utils.RandomUtils.randomInt;
 
