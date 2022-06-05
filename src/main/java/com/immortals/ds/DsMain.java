@@ -1,7 +1,7 @@
 package main.java.com.immortals.ds;
 
-import com.java.main.ds.tree.Tree;
-import com.java.main.ds.tree.TreeNode;
+import main.java.com.immortals.ds.tree.Tree;
+import main.java.com.immortals.ds.tree.TreeNode;
 
 public class DsMain{
 
