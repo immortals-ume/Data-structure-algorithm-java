@@ -29,10 +29,10 @@ public class DsMain{
         tree.bfs( treeNode );
 
         System.out.print( "\n"+"Minimum of BST : " );
-        System.out.print( tree.minimumTree( treeNode ) );
+        System.out.print( tree.findMinimum( treeNode ) );
 
         System.out.print( "\n"+"Maximum of BST : " );
-        System.out.print( tree.maximumTree( treeNode ) );
+        System.out.print( tree.findMaximum( treeNode ) );
 
         System.out.print( "\n"+"Searching an element in BST Recursively  : " );
         System.out.print( tree.searchElementUsingRecursion( treeNode,30 ) );

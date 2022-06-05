@@ -57,6 +57,8 @@ c. Finding a successor or predecessor in BST
 
       Successsor in BST - Inorder successor of a node is the next node in Inorder traversal of the Binary Tree. Inorder Successor is NULL for the last node in Inorder traversal.Inorder Successor of an input node can also be defined as the node with the smallest key greater than the key of the input node.
 
+      Predecessor in BST -  The predecessor of a node in BST is that node that will be visited just before the given node in the inorder traversal of the tree. If the given node is visited first in the inorder traversal, then its predecessor is NULL
+
 d. Insertion in BST
 e. deletion in BST
 f. create a tree from given traversal array . Inorder , postorder, preorder Traversal

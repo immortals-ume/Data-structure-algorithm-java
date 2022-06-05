@@ -107,7 +107,7 @@ public class Tree{
         return node;
     }
 
-    public int minimumTree( TreeNode node ){
+    public int findMinimum( TreeNode node ){
         if ( node==null ) {
             return Integer.MIN_VALUE;
         }
@@ -117,7 +117,7 @@ public class Tree{
         return node.data;
     }
 
-    public int maximumTree( TreeNode node ){
+    public int findMaximum( TreeNode node ){
         if ( node==null ) {
             return Integer.MIN_VALUE;
         }
@@ -125,5 +125,9 @@ public class Tree{
             node=node.right;
         }
         return node.data;
+    }
+
+    public void findSuccessor( TreeNode treeNode ){
+
     }
 }
