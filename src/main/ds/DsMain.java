@@ -28,11 +28,11 @@ public class DsMain{
 
         System.out.println( "TREE DATA STRUCTURE" );
         Tree tree=new Tree( );
-        tree.BinarySearchTree( 5 );
-        tree.BinarySearchTree( 6 );
-        tree.BinarySearchTree( 4 );
-        tree.BinarySearchTree( 52 );
-        tree.BinarySearchTree( 54 );
+        tree.binarySearchTree( 5 );
+        tree.binarySearchTree( 6 );
+        tree.binarySearchTree( 4 );
+        tree.binarySearchTree( 52 );
+        tree.binarySearchTree( 54 );
 
     }
 }

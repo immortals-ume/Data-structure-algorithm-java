@@ -23,7 +23,7 @@ public class Tree{
         return current;
     }
 
-    public void BinarySearchTree( int data ){
+    public void binarySearchTree( int data ){
         root=createTree( root,data );
     }
 
@@ -42,15 +42,15 @@ public class Tree{
     public void traversePreOrder( TreeNode node ){
         if ( node!=null ) {
             visit( node );
-            traverseInOrder( node.left );
-            traverseInOrder( node.right );
+            traversePreOrder( node.left );
+            traversePreOrder( node.right );
         }
     }
 
     public void traversePostOrder( TreeNode node ){
         if ( node!=null ) {
-            traverseInOrder( node.left );
-            traverseInOrder( node.right );
+            traversePostOrder( node.left );
+            traversePostOrder( node.right );
             visit( node );
         }
     }
