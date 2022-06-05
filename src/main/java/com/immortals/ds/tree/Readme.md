@@ -6,7 +6,7 @@
    which points to respective left child and right child and its parent. If child or parent is missing , the appropriate
    attributes contains the value as NULL. The root node is only node whose parent is NIL
 
-Representation of BST : [file][src/main/java/com/immortals/ds/TreeNode.java]
+Representation of BST :[representation of Tree](src/main/java/com/immortals/ds/tree/TreeNode.java)
 
 BST-property
 
@@ -55,7 +55,7 @@ b. Finding a MIN and MAX of BST
 
 c. Finding a successor or predecessor in BST
 
-      Successsor in BST - 
+      Successsor in BST - Inorder successor of a node is the next node in Inorder traversal of the Binary Tree. Inorder Successor is NULL for the last node in Inorder traversal.Inorder Successor of an input node can also be defined as the node with the smallest key greater than the key of the input node.
 
 d. Insertion in BST
 e. deletion in BST
