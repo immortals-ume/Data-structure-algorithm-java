@@ -6,6 +6,7 @@ import main.algorithms.searching.BinarySearch;
 import main.algorithms.searching.LinearSearch;
 import main.algorithms.sorting.BubbleSort;
 import main.algorithms.sorting.InsertionSort;
+import main.algorithms.sorting.MergeSort;
 
 
 
@@ -47,6 +48,8 @@ public class JavaIsFun{
                 { 0,3,2,3 },
                 { 1,2,1,2 } } );
 
+        System.out.println( " " );
 
+        MergeSort.mergeSorted(  new int[]{ 64,23,143,94,-93,203,-436 }  );
     }
 }

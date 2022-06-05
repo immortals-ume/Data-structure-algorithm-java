@@ -3,7 +3,11 @@ package main.ds;
 public class Queue{
 
 
-    int front, rear, size;
+    int front;
+
+    int rear;
+
+    int size;
 
     int capacity;
 
@@ -36,8 +40,7 @@ public class Queue{
                 %this.capacity;
         this.array[this.rear]=item;
         this.size=this.size+1;
-        System.out.println( item
-                +" enqueued to queue" );
+        System.out.println( item+" enqueued to queue" );
     }
 
     // Method to remove an item from queue.

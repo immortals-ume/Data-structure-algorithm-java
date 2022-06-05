@@ -4,7 +4,6 @@ public class LinkedList{
 
     public Node head;
 
-    /* This function prints contents of linked list starting from head */
     public void printList(){
         Node node=head;
         while ( node!=null ) {
