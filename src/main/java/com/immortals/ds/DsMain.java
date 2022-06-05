@@ -37,6 +37,9 @@ public class DsMain{
         System.out.print( "\n"+"Successor in BST: " );
         System.out.print( tree.findSuccessor( treeNode ) );
 
+        System.out.print( "\n"+"Predecessor in BST: " );
+        System.out.print( tree.findPredecessor( treeNode ) );
+
         System.out.print( "\n"+"Searching an element in BST Recursively  : " );
         System.out.print( tree.searchElementUsingRecursion( treeNode,30 ) );
 

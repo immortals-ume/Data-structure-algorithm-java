@@ -139,4 +139,17 @@ public class Tree{
         assert node!=null;
         return node.data;
     }
+
+    public int findPredecessor( TreeNode treeNode ){
+        if ( treeNode.left!=null ) {
+            return findMaximum( treeNode );
+        }
+        TreeNode node=treeNode.parent;
+        while ( node!=null&&treeNode==node.left ) {
+            treeNode=node;
+            node=node.parent;
+        }
+        assert node!=null;
+        return node.data;
+    }
 }
