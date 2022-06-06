@@ -53,3 +53,4 @@ To play with the Algorithms implemented check [algo-main](src/main/java/com/immo
     7. Multithreaded Algorithms
     8. Linear Algorithms
     9. Graph Algorithms
+    10. Backtracking Algorithms
