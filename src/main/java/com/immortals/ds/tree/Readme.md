@@ -61,12 +61,25 @@ c. Finding a successor or predecessor in BST
 
 d. Insertion in BST
 
-      1.Insert a new value at end of BST 
-      2.Insert a new value at begining of BST 
-      3.Insert a new value after a specific node in BST
-      4.Insert a new value before a specific node in BST
-
-      To Be Implemented .. 
+      1.Insert a new node in BST
+        To insert a new value v into BST T, follwoing procedure takes node z , where z.key = v ,z.left =NIL, z.right = NIL. it modifies T  and some attributes of z so it can find appropriate position in the tree to insert z.
+           
+        Pesudo-code - 
+           tree-insert(T,z):
+             y = NIL 
+             x = T.root
+           while x != NIL
+             y = x
+             if z.key < x.key 
+                x = x.key
+             else x = x.right
+           z.p = y 
+           if y == NIL
+              T.root = z  // T is empty 
+           else if z.key < y.key 
+              y.left = z
+           else
+              y.right = z
 
 e. deletion in BST
 

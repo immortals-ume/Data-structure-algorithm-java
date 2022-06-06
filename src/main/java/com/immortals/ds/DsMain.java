@@ -4,8 +4,6 @@ import main.java.com.immortals.ds.tree.Tree;
 import main.java.com.immortals.ds.tree.TreeNode;
 
 public class DsMain{
-
-
     public static void main( String[] args ){
         System.out.println( "TREE DATA STRUCTURE" );
 
