@@ -59,12 +59,12 @@ c. Finding a successor or predecessor in BST
 
       Predecessor in BST -  The predecessor of a node in BST is that node that will be visited just before the given node in the inorder traversal of the tree. If the given node is visited first in the inorder traversal, then its predecessor is NULL
 
-d. Insertion in BST
+d. Insertion a node in BST
 
       1.Insert a new node in BST
         To insert a new value v into BST T, follwoing procedure takes node z , where z.key = v ,z.left =NIL, z.right = NIL. it modifies T  and some attributes of z so it can find appropriate position in the tree to insert z.
            
-        Pesudo-code - 
+        Pesudo-code 
            tree-insert(T,z):
              y = NIL 
              x = T.root
@@ -81,10 +81,8 @@ d. Insertion in BST
            else
               y.right = z
 
-e. deletion in BST
+e. Deletion of node in BST
 
-      To be Implemented..
-    
       for deleting a node z from a BST has 3 conditions .
       
       If z has no children , then we simply remove it by modifying its parent to replace z with NIL as its child.
@@ -92,6 +90,36 @@ e. deletion in BST
       If z has just one child then we elevate that child to take z's position in the tree by modifying tz's parent to replace z by z'child.
      
       If z has two children , then we find z's successor y --  which must be in z's right subtree and have y take z's position in the tree.The rest of z's original right subtree becomes y's new right subtree a dn z's left tree becomes y's new left subtree.
+    
+      InOrder to move subtrees around BST we have efined a method called Transplant, which replaces one subtree as a child of the parent with another subtree. 
+
+      when Transplant method replaces subtree rooted ar node u with the subtree rooted at node v , node u's parent becomes node v's parent adn u'parent  have  v as it child
+
+      Pesudo-code 
+          tree-delete(T,z):
+          y = NIL
+          if z.left == NIL 
+             transplant(T,z,z.right)
+          else if z.right == NIL
+              transplant(T,z,z.left)
+          else y == Tree-minimum(z.right)
+            if y.p != z
+              transplant(T,y,y.right)
+              y.right = z.right
+              y.right.p = y 
+            transplant(T,z,y)
+            y.left = z.left
+            y.left.p = y
+         
+          transplant(T,u,v)
+          if u.p == NIL
+             T.root = v
+          else if u == u.p.left
+             u.p.left = v
+          else
+             u.p.right = v 
+          if v != NIL
+             v.p = u.p
 
 f. create a tree from given traversal array . Inorder , postorder, preorder Traversal
 

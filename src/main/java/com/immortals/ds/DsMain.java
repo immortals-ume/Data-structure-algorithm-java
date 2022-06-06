@@ -65,6 +65,21 @@ public class DsMain{
             System.out.print( "false" );
         }
 
+        System.out.print( "STACK DATA STRUCTURE" );
+        //final int MAX_SIZE=10;
+        //int[] test=new int[MAX_SIZE];
+        //Stack stack=new Stack( MAX_SIZE );
+        //System.out.print( stack.isFull( ) );
+        //System.out.print( stack.isEmpty( ) );
+        //System.out.print( stack.peek( ) );
+        //for ( int i=0 ; i<test.length ; i++ ) {
+        //    test[i]=randomInt( );
+        //}
+        //for ( final int j: test ) {
+        //    System.out.print( stack.push( j ) );
+        //}
+        //System.out.print( stack.pop( ) );
+
 
     }
 }

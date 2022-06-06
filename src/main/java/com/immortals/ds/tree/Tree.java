@@ -178,4 +178,8 @@ public class Tree{
 
         return y;
     }
+
+    public void deleteNode(){
+
+    }
 }
