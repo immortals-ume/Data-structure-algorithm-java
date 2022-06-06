@@ -59,8 +59,8 @@ c. Finding a successor or predecessor in BST
 
       Predecessor in BST -  The predecessor of a node in BST is that node that will be visited just before the given node in the inorder traversal of the tree. If the given node is visited first in the inorder traversal, then its predecessor is NULL
 
-d. Insertion in BST  
-   
+d. Insertion in BST
+
       1.Insert a new value at end of BST 
       2.Insert a new value at begining of BST 
       3.Insert a new value after a specific node in BST
@@ -69,7 +69,7 @@ d. Insertion in BST
       To Be Implemented .. 
 
 e. deletion in BST
-      
+
       To be Implemented..
     
       for deleting a node z from a BST has 3 conditions .
@@ -79,13 +79,13 @@ e. deletion in BST
       If z has just one child then we elevate that child to take z's position in the tree by modifying tz's parent to replace z by z'child.
      
       If z has two children , then we find z's successor y --  which must be in z's right subtree and have y take z's position in the tree.The rest of z's original right subtree becomes y's new right subtree a dn z's left tree becomes y's new left subtree.
-    
+
 f. create a tree from given traversal array . Inorder , postorder, preorder Traversal
-      
+
       To be implemented 
 
 g. calculating height of a BST
-   
+
       To be implemented
 
 refer [Implementation Of BST ](Tree.java)
