@@ -71,11 +71,11 @@ d. Insertion in BST
            while x != NIL
              y = x
              if z.key < x.key 
-                x = x.key
+                x = x.left
              else x = x.right
            z.p = y 
            if y == NIL
-              T.root = z  // T is empty 
+              T.root = z             //T is empty 
            else if z.key < y.key 
               y.left = z
            else

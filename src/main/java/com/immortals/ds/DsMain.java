@@ -4,6 +4,8 @@ import main.java.com.immortals.ds.tree.Tree;
 import main.java.com.immortals.ds.tree.TreeNode;
 
 public class DsMain{
+
+
     public static void main( String[] args ){
         System.out.println( "TREE DATA STRUCTURE" );
 
@@ -43,6 +45,9 @@ public class DsMain{
 
         System.out.print( "\n"+"Searching an element in BST Recursively : " );
         System.out.print( tree.searchElementUsingRecursion( treeNode,42 ) );
+
+        System.out.print( "\n"+"Insert a element into TREE  : " );
+        tree.traverseInOrder( tree.insert( treeNode,32 ) );
 
         System.out.print( "\n"+"Searching an element in BST Iteratively: " );
         final TreeNode treeNode1=tree.searchElementUsingIterativeApproach( treeNode,6 );

@@ -152,4 +152,30 @@ public class Tree{
         assert node!=null;
         return node.data;
     }
+
+    public TreeNode insert( TreeNode node,int key ){
+        TreeNode treeNode=new TreeNode( key );
+        TreeNode x=node;
+        TreeNode y=null;
+        while ( x!=null ) {
+            y=x;
+            if ( treeNode.data<x.data ) {
+                x=x.left;
+            } else {
+                x=x.right;
+            }
+        }
+
+        if ( y==null ) {
+            y=treeNode;
+        }
+        if ( treeNode.data<y.data ) {
+            y.left=treeNode;
+        }
+        if ( treeNode.data>y.data ) {
+            y.right=treeNode;
+        }
+
+        return y;
+    }
 }
