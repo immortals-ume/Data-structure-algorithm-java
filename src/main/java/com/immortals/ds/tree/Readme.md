@@ -104,6 +104,4 @@ f. Height of BST
       
       when we calculate the depth of a whole binary tree, it’s equivalent to the height of the binary tree.
 
-hi
-
 refer [Implementation Of BST ](Tree.java)
