@@ -90,43 +90,18 @@ e. Deletion of node in BST
       If z has just one child then we elevate that child to take z's position in the tree by modifying tz's parent to replace z by z'child.
      
       If z has two children , then we find z's successor y --  which must be in z's right subtree and have y take z's position in the tree.The rest of z's original right subtree becomes y's new right subtree a dn z's left tree becomes y's new left subtree.
-    
-      InOrder to move subtrees around BST we have efined a method called Transplant, which replaces one subtree as a child of the parent with another subtree. 
 
-      when Transplant method replaces subtree rooted ar node u with the subtree rooted at node v , node u's parent becomes node v's parent adn u'parent  have  v as it child
+f. Height of BST
 
-      Pesudo-code 
-          tree-delete(T,z):
-          y = NIL
-          if z.left == NIL 
-             transplant(T,z,z.right)
-          else if z.right == NIL
-              transplant(T,z,z.left)
-          else y == Tree-minimum(z.right)
-            if y.p != z
-              transplant(T,y,y.right)
-              y.right = z.right
-              y.right.p = y 
-            transplant(T,z,y)
-            y.left = z.left
-            y.left.p = y
-         
-          transplant(T,u,v)
-          if u.p == NIL
-             T.root = v
-          else if u == u.p.left
-             u.p.left = v
-          else
-             u.p.right = v 
-          if v != NIL
-             v.p = u.p
-
-f. create a tree from given traversal array . Inorder , postorder, preorder Traversal
-
-      To be implemented 
-
-g. calculating height of a BST
-
-      To be implemented
+      The height of a node in a binary tree is the largest number of edges in a path from a leaf node to a target node.
+     
+      If the target node doesn’t have any other nodes connected to it, the height of that node would be 0. 
+  
+     The height of a binary tree is the height of the root node in the whole binary tree. In other words, the height of a binary tree is equal to the largest number of edges from the root to the most distant leaf node.
+     
+      The depth of a node in a binary tree is the total number of edges from the root node to the target node. 
+      Similarly, the depth of a binary tree is the total number of edges from the root node to the most distant leaf node.
+      
+      when we calculate the depth of a whole binary tree, it’s equivalent to the height of the binary tree.
 
 refer [Implementation Of BST ](Tree.java)

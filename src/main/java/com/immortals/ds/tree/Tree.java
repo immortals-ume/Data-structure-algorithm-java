@@ -3,6 +3,9 @@ package main.java.com.immortals.ds.tree;
 import java.util.LinkedList;
 import java.util.Queue;
 
+/**
+ * @author immortals-ume
+ */
 public class Tree{
 
 
@@ -77,7 +80,7 @@ public class Tree{
     }
 
     /**
-     * Searching a element in BST , recursive approach
+     * Searching an element in BST , recursive approach
      */
     public boolean searchElementUsingRecursion( TreeNode node,int key ){
         boolean response;
@@ -153,16 +156,16 @@ public class Tree{
         return node.data;
     }
 
-    public TreeNode insert( TreeNode node,int key ){
+    public void insert( TreeNode node,int key ){
         TreeNode treeNode=new TreeNode( key );
-        TreeNode x=node;
+        TreeNode node1=node;
         TreeNode y=null;
-        while ( x!=null ) {
-            y=x;
-            if ( treeNode.data<x.data ) {
-                x=x.left;
+        while ( node1!=null ) {
+            y=node1;
+            if ( treeNode.data<node1.data ) {
+                node1=node1.left;
             } else {
-                x=x.right;
+                node1=node1.right;
             }
         }
 
@@ -176,10 +179,58 @@ public class Tree{
             y.right=treeNode;
         }
 
-        return y;
     }
 
-    public void deleteNode(){
+    public TreeNode deleteNode( TreeNode root,int key ){
+
+        if ( root==null )
+            return root;
+
+        if ( root.data>key ) {
+            root.left=deleteNode( root.left,key );
+            return root;
+        }
+        if ( root.data<key ) {
+            root.right=deleteNode( root.right,key );
+            return root;
+        }
+        if ( root.left==null ) {
+            return root.right;
+        }
+
+        if ( root.right==null ) {
+            return root.left;
+        } else {
+            TreeNode successorParent=root;
+            TreeNode successor=root.right;
+
+            while ( successor.left!=null ) {
+                successorParent=successor;
+                successor=successor.left;
+            }
+
+            if ( successorParent!=root )
+                successorParent.left=successor.right;
+            else
+                successorParent.right=successor.right;
+
+            root.data=successor.data;
+
+            return root;
+        }
 
     }
+
+    public int height( TreeNode node ){
+        if ( node==null ) {
+            return -1; //Tree is empty
+        } else {
+            int maxLeftDepth=height( node.left );
+            int maxRightDepth=height( node.right );
+            if ( maxLeftDepth>maxRightDepth )
+                return (maxLeftDepth+1);
+            else return (maxRightDepth+1);
+        }
+    }
+
 }

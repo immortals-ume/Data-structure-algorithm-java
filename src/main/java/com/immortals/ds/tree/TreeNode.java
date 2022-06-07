@@ -1,12 +1,12 @@
 package main.java.com.immortals.ds.tree;
 
 /**
- * Represents A Binary Tree Node
+ * @author immortals-ume
  */
 public class TreeNode{
 
 
-    public final int data;
+    public int data;
 
     public TreeNode left;
 
