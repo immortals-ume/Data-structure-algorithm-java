@@ -6,7 +6,7 @@ import java.util.Queue;
 /**
  * @author immortals-ume
  */
-public class Tree{
+public class BinarySearchTree{
 
 
     private TreeNode root;
@@ -62,7 +62,7 @@ public class Tree{
     }
 
     /**
-     * BFS Implementation On a Tree
+     * BFS Implementation On a BinarySearchTree
      */
     public void bfs( TreeNode root ){
         Queue< TreeNode > queue=new LinkedList<>( );
@@ -223,7 +223,7 @@ public class Tree{
 
     public int height( TreeNode node ){
         if ( node==null ) {
-            return -1; //Tree is empty
+            return -1; //BinarySearchTree is empty
         } else {
             int maxLeftDepth=height( node.left );
             int maxRightDepth=height( node.right );

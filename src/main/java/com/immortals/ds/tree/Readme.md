@@ -1,6 +1,6 @@
 # Data Structure : Tree
 
-1. BST - Binary Search Tree | Time Complexity is directly proportional to Height Of tree
+1. BST - Binary Search Tree | Time Complexity is directly proportional to Height Of binarySearchTree
 
    Tree consist of key and satellite data , in addition to previous values it also consists of left, right , parent
    which points to respective left child and right child and its parent. If child or parent is missing , the appropriate
@@ -30,18 +30,18 @@ Traversing a BST using DEPTH FIRST SEARCH
 
 Traversing a BST using BREADTH FIRST SEARCH
 
-     Breadth-first search (BFS) is an algorithm for searching a tree data structure for a node that satisfies
-     a given property.It starts at the tree root and explores all nodes at the present depth prior to moving
+     Breadth-first search (BFS) is an algorithm for searching a binarySearchTree data structure for a node that satisfies
+     a given property.It starts at the binarySearchTree root and explores all nodes at the present depth prior to moving
      on to the nodes at the next depth level.
 
 Querying a BST
 
 a. Searching an element in BST
 
-    Given a pointer to the root of the tree and a key ,
-    tree search returns pointer to a node with a Key k if one exists otherwise returns NIL
+    Given a pointer to the root of the binarySearchTree and a key ,
+    binarySearchTree search returns pointer to a node with a Key k if one exists otherwise returns NIL
     
-    |Time Complexity : The time complexity is O(h)  where h is height of the tree
+    |Time Complexity : The time complexity is O(h)  where h is height of the binarySearchTree
 
 b. Finding a MIN and MAX of BST
 
@@ -51,21 +51,21 @@ b. Finding a MIN and MAX of BST
     Maximum Value In BST  - find an element such a way in BST , whose key is maximum by following 
     all the right child pointers until it reaches NIL
    
-    |Time Complexity : The time complexity is O(h)  where h is height of the tree
+    |Time Complexity : The time complexity is O(h)  where h is height of the binarySearchTree
 
 c. Finding a successor or predecessor in BST
 
       Successsor in BST - Inorder successor of a node is the next node in Inorder traversal of the Binary Tree. Inorder Successor is NULL for the last node in Inorder traversal.Inorder Successor of an input node can also be defined as the node with the smallest key greater than the key of the input node.
 
-      Predecessor in BST -  The predecessor of a node in BST is that node that will be visited just before the given node in the inorder traversal of the tree. If the given node is visited first in the inorder traversal, then its predecessor is NULL
+      Predecessor in BST -  The predecessor of a node in BST is that node that will be visited just before the given node in the inorder traversal of the binarySearchTree. If the given node is visited first in the inorder traversal, then its predecessor is NULL
 
 d. Insertion a node in BST
 
       1.Insert a new node in BST
-        To insert a new value v into BST T, follwoing procedure takes node z , where z.key = v ,z.left =NIL, z.right = NIL. it modifies T  and some attributes of z so it can find appropriate position in the tree to insert z.
+        To insert a new value v into BST T, follwoing procedure takes node z , where z.key = v ,z.left =NIL, z.right = NIL. it modifies T  and some attributes of z so it can find appropriate position in the binarySearchTree to insert z.
            
         Pesudo-code 
-           tree-insert(T,z):
+           binarySearchTree-insert(T,z):
              y = NIL 
              x = T.root
            while x != NIL
@@ -87,21 +87,38 @@ e. Deletion of node in BST
       
       If z has no children , then we simply remove it by modifying its parent to replace z with NIL as its child.
       
-      If z has just one child then we elevate that child to take z's position in the tree by modifying tz's parent to replace z by z'child.
+      If z has just one child then we elevate that child to take z's position in the binarySearchTree by modifying tz's parent to replace z by z'child.
      
-      If z has two children , then we find z's successor y --  which must be in z's right subtree and have y take z's position in the tree.The rest of z's original right subtree becomes y's new right subtree a dn z's left tree becomes y's new left subtree.
+      If z has two children , then we find z's successor y --  which must be in z's right subtree and have y take z's position in the binarySearchTree.The rest of z's original right subtree becomes y's new right subtree a dn z's left binarySearchTree becomes y's new left subtree.
 
 f. Height of BST
 
-      The height of a node in a binary tree is the largest number of edges in a path from a leaf node to a target node.
+      The height of a node in a binary binarySearchTree is the largest number of edges in a path from a leaf node to a target node.
      
       If the target node doesn’t have any other nodes connected to it, the height of that node would be 0. 
   
-     The height of a binary tree is the height of the root node in the whole binary tree. In other words, the height of a binary tree is equal to the largest number of edges from the root to the most distant leaf node.
+      The height of a binary binarySearchTree is the height of the root node in the whole binary binarySearchTree. In other words, the height of a binary binarySearchTree is equal to the largest number of edges from the root to the most distant leaf node.
      
-      The depth of a node in a binary tree is the total number of edges from the root node to the target node. 
-      Similarly, the depth of a binary tree is the total number of edges from the root node to the most distant leaf node.
+      The depth of a node in a binary binarySearchTree is the total number of edges from the root node to the target node. 
+      Similarly, the depth of a binary binarySearchTree is the total number of edges from the root node to the most distant leaf node.
       
-      when we calculate the depth of a whole binary tree, it’s equivalent to the height of the binary tree.
+      when we calculate the depth of a whole binary binarySearchTree, it’s equivalent to the height of the binary binarySearchTree.
+
+g. Randomly Build Binary Search Tree
+
+      for n keys as one that arises from inserting the keys in randomly order into an intial empty tree, where each of the n! permutation of the input key is equally likely . 
 
 refer [Implementation Of BST ](Tree.java)
+
+2. Radix Tree  
+   Radix trees are defined as following ..
+
+         given two strings a = a0 , a1 ... an and b = b0 ... bn where each ai and bi is in some ordered set of characters
+         ,we say that string a is lexicographically less than string b if either
+
+            1. there exists an integer j , where 0<=j<=min(p,q) , such that ai = bi for all i =0,1....,j-1 and aj<bj or    
+            2.  p<q and ai=bi for all i =0 , 1....p 
+
+Radix tree representation
+
+    ![](src\resources\radix.png "radix tree implementation")

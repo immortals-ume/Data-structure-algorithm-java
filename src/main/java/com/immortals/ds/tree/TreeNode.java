@@ -14,6 +14,9 @@ public class TreeNode{
 
     public TreeNode parent;
 
+    public TreeNode(){}
+
+
     public TreeNode( int data ){
         this.data=data;
         left=null;
