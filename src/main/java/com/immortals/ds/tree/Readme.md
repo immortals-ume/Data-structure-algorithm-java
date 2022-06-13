@@ -6,7 +6,7 @@
    which points to respective left child and right child and its parent. If child or parent is missing , the appropriate
    attributes contains the value as NULL. The root node is only node whose parent is NIL
 
-Representation of BST : [Representation of Node in a BST](TreeNode.java)
+   Representation of BST : [Representation of Node in a BST](TreeNode.java)
 
 BST-property
 
@@ -110,11 +110,11 @@ g. Randomly Build Binary Search Tree
 
 refer [Implementation Of BST ](Tree.java)
 
-2. Radix Tree  
-   Radix trees are defined as following ..
 
-         given two strings a = a0 , a1 ... an and b = b0 ... bn where each ai and bi is in some ordered set of characters
-         ,we say that string a is lexicographically less than string b if either
+2. Radix Tree  
+   Radix trees are defined as
+   given two strings a = a0 , a1 ... an and b = b0 ... bn where each ai and bi is in some ordered set of characters
+   ,we say that string a is lexicographically less than string b if either
 
             1. there exists an integer j , where 0<=j<=min(p,q) , such that ai = bi for all i =0,1....,j-1 and aj<bj or    
             2.  p<q and ai=bi for all i =0 , 1....p 
