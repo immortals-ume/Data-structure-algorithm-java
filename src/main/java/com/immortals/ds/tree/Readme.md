@@ -118,7 +118,3 @@ refer [Implementation Of BST ](Tree.java)
 
             1. there exists an integer j , where 0<=j<=min(p,q) , such that ai = bi for all i =0,1....,j-1 and aj<bj or    
             2.  p<q and ai=bi for all i =0 , 1....p 
-
-Radix tree representation
-
-    ![](src\resources\radix.png "radix tree implementation")
